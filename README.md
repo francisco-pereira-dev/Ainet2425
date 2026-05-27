@@ -28,3 +28,38 @@ npm run dev
 
 ---
 
+## Credenciais de Acesso
+
+A password para todas estas contas é: 123
+
+Membros da Direção (Board / Admin)
+
+```bash
+Email: b1@mail.pt
+Email: b2@mail.pt
+Email: b3@mail.pt
+Email: b4@mail.pt
+```
+
+---
+
+Funcionários (Employee)
+
+```bash
+Email: e1@mail.pt
+Email: e2@mail.pt
+Email: e3@mail.pt
+Email: e4@mail.pt
+```
+
+---
+
+Membros Regulares / Sócios (Member)
+```bash
+Email: m1@mail.pt
+Email: m2@mail.pt
+Email: m3@mail.pt
+Email: m4@mail.pt
+```
+
+---
