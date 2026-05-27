@@ -1,5 +1,5 @@
 # 1. Usa o PHP com um servidor web Apache integrado
-FROM php:8.2-apache
+FROM php:8.3-apache
 
 # 2. Instala os pacotes do sistema e Node.js (para o Frontend)
 RUN apt-get update && apt-get install -y \
@@ -32,7 +32,8 @@ WORKDIR /var/www/html
 COPY . .
 
 # 8. Instala as dependências do PHP e do JavaScript
-RUN composer install --optimize-autoloader --no-dev
+ENV COMPOSER_ALLOW_SUPERUSER=1
+RUN composer install --optimize-autoloader --no-dev --no-scripts
 RUN npm install
 RUN npm run build
 
