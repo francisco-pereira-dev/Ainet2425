@@ -1,0 +1,10 @@
+# Ignorar variáveis de ambiente (Segurança)
+.env
+.env.backup
+.env.production
+
+# Ignorar pastas pesadas (Dependências)
+/vendor
+/node_modules
+/public/build
+/public/hot
