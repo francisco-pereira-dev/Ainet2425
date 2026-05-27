@@ -28,7 +28,7 @@ npm run dev
 
 ---
 
-## Credenciais de Acesso
+## 🔐 Credenciais de Acesso
 
 A password para todas estas contas é: 123
 
