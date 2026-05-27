@@ -39,3 +39,6 @@ RUN npm run build
 # 9. Dá as permissões corretas às pastas críticas do Laravel
 RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
 RUN chmod -R 775 /var/www/html/storage /var/www/html/bootstrap/cache
+
+# 10. Executa as migrações e arranca o servidor Apache
+CMD php artisan migrate:fresh --seed --force && apache2-foreground
