@@ -8,13 +8,14 @@ RUN apt-get update && apt-get install -y \
     libpng-dev \
     libonig-dev \
     libxml2-dev \
+    libzip-dev \
     zip \
     unzip \
     nodejs \
     npm
 
 # 3. Instala as extensões de PHP necessárias para o Laravel
-RUN docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd
+RUN docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd zip
 
 # 4. Instala o Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
@@ -33,7 +34,8 @@ COPY . .
 
 # 8. Instala as dependências do PHP e do JavaScript
 ENV COMPOSER_ALLOW_SUPERUSER=1
-RUN composer install --optimize-autoloader --no-dev --no-scripts
+ENV COMPOSER_MEMORY_LIMIT=-1
+RUN composer install --optimize-autoloader --no-dev --no-scripts --no-interaction
 RUN npm install
 RUN npm run build
 
