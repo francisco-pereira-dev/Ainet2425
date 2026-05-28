@@ -189,11 +189,3 @@ Route::middleware(['auth', 'verified', 'can:isBoard'])->group(function () {
 Route::get('receipts/{file}', function($file){
     return response()->file(storage_path('app/private/receipts/'.$file));
 })->name('receipts.view');
-
-// Rota temporária para correr o seeder no Render
-use Illuminate\Support\Facades\Artisan;
-Route::get('/correr-seeder', function () {
-    set_time_limit(0); // Ignorar o limite de 30 segundos do PHP
-    Artisan::call('db:seed', ['--force' => true]);
-    return 'Base de dados populada com sucesso! Já podes apagar esta rota.';
-});
