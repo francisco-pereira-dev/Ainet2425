@@ -36,7 +36,7 @@ COPY . .
 # 8. Instala as dependências do PHP e do JavaScript
 ENV COMPOSER_ALLOW_SUPERUSER=1
 ENV COMPOSER_MEMORY_LIMIT=-1
-RUN composer install --optimize-autoloader --no-dev --no-scripts --no-interaction --ignore-platform-reqs
+RUN composer install --optimize-autoloader --no-scripts --no-interaction --ignore-platform-reqs
 RUN npm install
 RUN npm run build
 
