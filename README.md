@@ -1,12 +1,14 @@
 # 🎓 Projeto AINET - Aplicações para a Internet
 
-Este repositório contém um projeto desenvolvido em equipa (3 elementos) no âmbito de uma Unidade Curricular da licenciatura. O foco deste trabalho foi a construção de uma solução full-stack robusta utilizando a framework **Laravel**, onde aplicámos os nossos conhecimentos no padrão MVC (Model-View-Controller), na segurança de rotas e na gestão de bases de dados relacionais.
+Este repositório contém um projeto desenvolvido em equipa (3 elementos) no âmbito da licenciatura em Engenharia Informática. O principal objetivo foi arquitetar e desenvolver uma solução full-stack escalável com recurso à framework **Laravel**. 
+
+Durante o desenvolvimento, consolidámos a aplicação prática do padrão arquitetural **MVC** (Model-View-Controller), a implementação rigorosa de segurança e proteção de rotas, bem como a modelação e gestão de bases de dados relacionais.
 
 ---
 
 ## ⚙️ Como executar o Backend
 
-Para arrancar com a infraestrutura, preparar a base de dados e povoá-la com dados de teste, abre o terminal na **pasta raiz do projeto** e corre os seguintes comandos:
+Para inicializar o ambiente, configurar a base de dados e povoá-la automaticamente com dados de teste (seeding), abre o terminal na pasta raiz do projeto e executa os seguintes comandos:
 
 ```bash
 composer install
@@ -21,7 +23,7 @@ php artisan serve
 
 ## 💻 Como executar o Frontend
 
-Como o projeto utiliza o Vite para compilação de assets em tempo real, precisarás de abrir um novo terminal (mantendo o do backend aberto) também na pasta raiz do projeto, e executar:
+Este projeto tira partido do **Vite** para a compilação de assets otimizada e em tempo real (HMR). Num novo terminal (mantendo o servidor do backend em execução na pasta raiz), executa:
 
 ```bash
 npm install
@@ -32,8 +34,9 @@ npm run dev
 
 ## 🔐 Credenciais de Acesso (Dados de Teste)
 
-Ao correres o comando de migração com a flag --seed, foram gerados utilizadores de teste para poderes explorar a plataforma.
-A password para todas estas contas é: 123
+A execução das migrações com a flag `--seed` gera automaticamente múltiplos perfis com diferentes níveis de privilégio (Role-Based Access Control), permitindo testar todas as áreas restritas da plataforma de forma imediata. 
+
+A password predefinida para todas as contas de teste é: 123
 
 Membros da Direção (Board / Admin)
 
@@ -44,8 +47,6 @@ b3@mail.pt
 b4@mail.pt
 ```
 
----
-
 Funcionários (Employee)
 
 ```bash
@@ -55,8 +56,6 @@ e3@mail.pt
 e4@mail.pt
 ```
 
----
-
 Membros Regulares / Sócios (Member)
 ```bash
 m1@mail.pt
@@ -64,5 +63,3 @@ m2@mail.pt
 m3@mail.pt
 m4@mail.pt
 ```
-
----
