@@ -4,7 +4,6 @@ Este repositório contém um projeto desenvolvido em equipa (3 elementos) no âm
 
 Durante o desenvolvimento, consolidámos a aplicação prática do padrão arquitetural **MVC** (Model-View-Controller), a implementação rigorosa de segurança e proteção de rotas, bem como a modelação e gestão de bases de dados relacionais.
 
----
 
 
 ## ⚙️ Como executar o Backend
@@ -20,7 +19,6 @@ php artisan migrate --seed
 php artisan serve
 ```
 
----
 
 
 ## 💻 Como executar o Frontend
@@ -32,7 +30,6 @@ npm install
 npm run dev
 ```
 
----
 
 
 ## 🔐 Credenciais de Acesso (Dados de Teste)
