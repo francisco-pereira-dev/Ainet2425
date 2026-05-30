@@ -6,6 +6,7 @@ Durante o desenvolvimento, consolidámos a aplicação prática do padrão arqui
 
 ---
 
+
 ## ⚙️ Como executar o Backend
 
 Para inicializar o ambiente, configurar a base de dados e povoá-la automaticamente com dados de teste (seeding), abre o terminal na pasta raiz do projeto e executa os seguintes comandos:
@@ -21,6 +22,7 @@ php artisan serve
 
 ---
 
+
 ## 💻 Como executar o Frontend
 
 Este projeto tira partido do **Vite** para a compilação de assets otimizada e em tempo real (HMR). Num novo terminal (mantendo o servidor do backend em execução na pasta raiz), executa:
@@ -31,6 +33,7 @@ npm run dev
 ```
 
 ---
+
 
 ## 🔐 Credenciais de Acesso (Dados de Teste)
 
